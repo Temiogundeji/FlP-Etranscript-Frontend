@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E Transcript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="main.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> 
+    
+
+    <style>
+        .bkg{
+            height: 800px; 
+            margin: 0 auto;
+            border: 18px solid #147A3F;
+            padding: none; 
+
+        } 
+        .is-half{
+            margin: 0 auto; 
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <div id="app2" class="columns bkg">
+            <div class="column is-half">
+                <table class="table" style="margin: 40px auto">
+                    <thead>
+                        <tr>
+                            <th scope="col">STUDENT NAMES</th>
+                            <th scope="col">INSTITUTION</th>
+                            <th scope="col">STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aliyu Ahmed</td>
+                            <td>Nassarawa State University Keffi</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select1">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                            <!-- <td style="color: green">COMPLETE</td>
+                            <td style="color: orange">IN PROGRESS</td>
+                            <td style="color: brown">CANCELLED</td> -->
+                        
+                        </tr>
+                        <tr>
+                            <td>Aisha Yusuf</td>
+                            <td>Univeristy of Maiduguri</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select2">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Uche Odu</td>
+                            <td>Ahmadu Bello University, Zaria</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select3">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ugochukwu Nwachukwu</td>
+                            <td>Ben Idahosa University, Zaria</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select4">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Charles Chukwuma</td>
+                            <td>Afe Babalola University</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select5">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Auwal Sani</td>
+                            <td>University of Lagos</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select6">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Akwon Otu</td>
+                            <td>Baze University</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select7">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sagir Kwarra</td>
+                            <td>Nile University</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select8">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jibril Aliyu</td>
+                            <td>American University of Nigeria</td>
+                            <td class="form-group">
+                                <select class="form-control" id="select9">
+                                    <option class="red" value="A" style="color: red;">PENDING</option>
+                                    <option class="green" value="B" style="color: green;">COMPLETE</option>
+                                    <option class="orange" value="C" style="color: orange;">IN PROGRESS</option>
+                                    <option class="brown" value="D" style="color: brown;">CANCELLED</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<script>
+
+$(document).ready(function() {
+    $('#select1').css('color','red');
+    $('#select1').change(function() {
+       var current = $('#select1').val();
+       if (current == 'A') {
+           $('#select1').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select1').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select1').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select1').css('color','brown');
+       } 
+    }); 
+ }); 
+$(document).ready(function() {
+    $('#select2').css('color','red');
+    $('#select2').change(function() {
+       var current = $('#select2').val();
+       if (current == 'A') {
+           $('#select2').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select2').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select2').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select2').css('color','brown');
+       } 
+    }); 
+ }); 
+$(document).ready(function() {
+    $('#select3').css('color','red');
+    $('#select3').change(function() {
+       var current = $('#select3').val();
+       if (current == 'A') {
+           $('#select3').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select3').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select3').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select3').css('color','brown');
+       } 
+    }); 
+ }); 
+$(document).ready(function() {
+    $('#select4').css('color','red');
+    $('#select4').change(function() {
+       var current = $('#select4').val();
+       if (current == 'A') {
+           $('#select4').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select4').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select4').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select4').css('color','brown');
+       } 
+    }); 
+ }); 
+$(document).ready(function() {
+    $('#select5').css('color','red');
+    $('#select5').change(function() {
+       var current = $('#select5').val();
+       if (current == 'A') {
+           $('#select5').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select5').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select5').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select5').css('color','brown');
+       } 
+    }); 
+ }); 
+
+$(document).ready(function() {
+    $('#select6').css('color','red');
+    $('#select6').change(function() {
+       var current = $('#select6').val();
+       if (current == 'A') {
+           $('#select6').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select6').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select6').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select6').css('color','brown');
+       } 
+    }); 
+ }); 
+
+$(document).ready(function() {
+    $('#select7').css('color','red');
+    $('#select7').change(function() {
+       var current = $('#select7').val();
+       if (current == 'A') {
+           $('#select7').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select7').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select7').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select7').css('color','brown');
+       } 
+    }); 
+ }); 
+
+$(document).ready(function() {
+    $('#select8').css('color','red');
+    $('#select8').change(function() {
+       var current = $('#select8').val();
+       if (current == 'A') {
+           $('#select8').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select8').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select8').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select8').css('color','brown');
+       } 
+    }); 
+ }); 
+
+ $(document).ready(function() {
+    $('#select9').css('color','red');
+    $('#select9').change(function() {
+       var current = $('#select9').val();
+       if (current == 'A') {
+           $('#select9').css('color','red');
+       } 
+       if (current == 'B') {
+           $('#select9').css('color','green');
+       } 
+       if (current == 'C') {
+           $('#select9').css('color','orange');
+       } 
+       if (current == 'D') {
+           $('#select9').css('color','brown');
+       } 
+    }); 
+ });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script src="main.js"></script>
+
+    <style>
+    .bkg{
+        height: 800px; 
+        margin: 0 auto;
+        border-top: 1px solid #147A3F;
+        border-right: 18px solid #147A3F;
+        border-bottom: 18px solid #147A3F;
+        border-left: 18px solid #147A3F;    
+    }
+
+    .field{
+        margin: 50px auto;
+    }
+
+    .control{
+        margin-top: 20px;
+    }
+
+    input::placeholder { 
+        color: #828282;
+        opacity: 1; 
+    }
+
+    :-ms-input-placeholder {
+        color: #828282;
+    }
+    
+    ::-ms-input-placeholder{
+        color: #828282;
+    }
+
+    a:hover {
+        background-color:transparent;
+    }
+
+    .input{
+        border-color: rgba(152, 160, 152, 0.801);
+    }
+    </style>
+</head>
+<body>
+    <div style="background-color: #147A3F; padding: 20px;">
+        <nav class="navbar" style="background-color: #147A3F">
+            <div class="navbar-brand">
+                <a href="#" style="margin-left: 20px; margin-top:15px">
+                    <svg width="40" height="33" viewBox="0 0 30 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image width="30" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAXCAYAAAAcP/9qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABPSURBVHgB7dRBDQAgDAPAggIk4AwNSEApOAAHYyCiJKSXdNmvv8LMimcaTz+d4TwAMrhW9JPAd4urZ4BneRpE/qPlYhZrueQzGhBm8ZMB2aDXfHET3unhAAAAAElFTkSuQmCC"/>
+                    </svg>
+                </a>  
+            </div>
+        </nav>
+    </div>
+    <div class="bkg">
+        <div class="field column is-three-quarters">
+            <div class="control">
+                <input class="input" type="text" placeholder="Institution Name">
+            </div>
+
+            <div class="control">
+                <input class="input" type="text" placeholder="Street Address">
+            </div> 
+
+            <div class="columns">
+                <div class="control column is-half">
+                    <input class="input" type="text" placeholder="City">
+                </div>
+
+                <div class="control column">
+                    <input class="input" type="text" placeholder="State/Province">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="control column is-half">
+                    <input class="input" type="text" placeholder="Postal/Zip Code">
+                </div>
+
+                <div class="control column">
+                    <input class="input" type="text" placeholder="Country">
+                </div>
+            </div>
+
+            <div class="control">
+                <input class="input" type="text" placeholder="Email Address">
+            </div> 
+
+            <div class="control">
+                <input class="input" type="text" placeholder="Password">
+            </div> 
+
+            <div class="control">
+                <button class="button is-link" style="width: 125px; height: 40px; position: absolute; right: 10px; background-color: #6FCF97;">Submit</button>
+            </div>
+        </div>
+    </div>     
+        
+</body>
+</html>

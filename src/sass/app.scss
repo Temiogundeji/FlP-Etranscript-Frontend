@@ -1,0 +1,22 @@
+@charset "utf-8";
+body{
+  margin: 0;
+  background-size: auto;
+  background: url("/static/geometry2.png") repeat;
+}
+#app {
+  padding: 0;
+  text-align: left !important;
+}
+.navbar-burger{
+  margin: 10px;
+}
+//Colors and Theme-ing
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+$family-sans-serif: 'Karla', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$weight-normal: 500;
+//bulma Imports
+@import "~bulma";
+@import "~bulma-tooltip";
+
+$navbar-background-color:$white;
